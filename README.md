@@ -1,3 +1,3 @@
-# nelson-site
+# nelsonbeer
 
 Nelson Beer artist website
