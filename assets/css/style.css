@@ -76,9 +76,10 @@ a:hover {
 /* Particles */
 #particles-js {
 	position: absolute;
-    width: 100%;
-    height: 100%;
+    width: calc(100% - 20rem);
+	height: 100%;
 	z-index: 3;
+	margin-left: 20rem;
 }
 
 /* #particles-js canvas {
@@ -412,6 +413,7 @@ footer .copyright-link {
 		z-index: 3;
 		top: 0;
 		left: 0;
+		margin-left: 0;
 	}
 }
 
