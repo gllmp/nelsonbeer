@@ -10,6 +10,11 @@
 	src: url("../fonts/MuliLight/Muli-Regular.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: "Quebec Serial Light";
+	src: url("../fonts/QuebecSerialLight/quebec-serial-light-regular.ttf") format("truetype");
+}
+
 /* Prevent text selection */
 * {
     -webkit-touch-callout: none; /* iOS Safari */
@@ -65,7 +70,7 @@ a:hover {
 	display: flex;
     flex-direction: column;
 	position: relative;
-	z-index: 0;
+	z-index: 2;
 }
 
 /* Navigation Header */
@@ -92,11 +97,18 @@ a:hover {
 	margin-top: auto;
     margin-bottom: auto;
 	font-size: 20px;
-	font-family: "Muli Regular", Arial, Helvetica, sans-serif;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .nav-links nav {
 	width: fit-content;
+}
+
+.nav-links .nav-group {
+	display: inline-block;
 }
 
 .nav-links a {
@@ -104,19 +116,34 @@ a:hover {
 	font-weight: bold;
 	margin: 1rem;
 	padding: 0;
+	float: left;
+}
+
+.nav-links .nav-title {
+	font-family: "Muli Regular", Arial, Helvetica, sans-serif;
+	opacity: 1;
+}
+
+.nav-links .nav-title:hover {
+	opacity: 0.7;
 }
 
 .nav-masthead .nav-link {
-	padding: .25rem 0;
-	font-weight: 700;
-	color: rgba(0, 0, 0, .5);
+	padding: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Quebec Serial Light", Arial, Helvetica, sans-serif;;
+	color: rgba(0, 0, 0, .1.0) !important;
 	background-color: transparent;
 	border-bottom: .25rem solid transparent;
+	opacity: 1;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-	border-bottom-color: rgba(0, 0, 0, .25);
+	/* border-bottom-color: rgba(0, 0, 0, .25); */
+	opacity: 0.5;
+	font-style: italic;
 }
 
 .nav-masthead .nav-link+.nav-link {
@@ -174,7 +201,7 @@ main {
 	font-size: 18px;
     font-weight: normal;
 	font-style: italic;
-	margin-top: 2em;
+	margin-top: 1em;
     margin-bottom: 2em;
 }
 
@@ -187,11 +214,17 @@ main {
 	max-width: 500px;
     max-height: 900px;
 	font-family: "Myriad Pro Light SemiExtended", Arial, Helvetica, sans-serif;
+	border: 1px solid #000;
+}
+
+.jsPanel-headerbar {
+	margin: 1em;
 }
 
 .jsPanel-titlebar {
 	position: relative;
 	font-size: 1.2rem !important;
+	padding-bottom: 0.2em;
 }
 
 .jsPanel-titlebar:after {
@@ -206,7 +239,8 @@ main {
 
 .jsPanel-content {
 	border-top: none !important;
-	padding: 1em;
+	padding: 2em;
+	padding-top: 0;
 }
 
 .jsPanel-content p {
@@ -215,6 +249,10 @@ main {
 
 .jsPanel-depth-3 {
     box-shadow: 0 14px 28px rgb(0 0 0 / 50%), 0 10px 10px rgb(0 0 0 / 50%);
+}
+
+.jsPanel-hdr.jsPanel-hdr-light .jsPanel-btn:hover {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* Window Scrollbar */
