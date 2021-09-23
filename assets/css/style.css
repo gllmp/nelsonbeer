@@ -384,6 +384,22 @@ footer .copyright-link {
 		margin-left: 1rem;
 	}
 
+	.nav-links {
+		margin-top: 1rem;
+	}
+
+	.nav-links a {
+		float: inherit;
+	}
+	
+	.nav-links .nav-title {
+		margin: 0;
+	}
+
+	.nav-masthead .nav-link {
+		margin: 0.25rem;
+	}
+
 	.jsPanel {
 		width: 80% !important;
 		height: 80% !important;
