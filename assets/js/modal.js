@@ -1,6 +1,8 @@
 const newsContent = document.getElementById("news-content");
 
-let panel = jsPanel.create({
+let panelIsClosed = false;
+
+let panelOptions = {
     position: "center",
     container: "window",
     theme: {
@@ -37,7 +39,9 @@ let panel = jsPanel.create({
         
         
     }
-});
+};
+
+let panel = jsPanel.create(panelOptions);
 
 // function resize() {
 //     //panel.resize();
@@ -45,3 +49,25 @@ let panel = jsPanel.create({
 // }
 
 // window.addEventListener('resize', resize);
+
+// setup close event handler function
+let panelCloseHandler = function(event) {
+    panelIsClosed = true;
+    console.log("panel closed !")
+}
+
+// assign close handler to event
+document.addEventListener('jspanelclosed', panelCloseHandler, false);
+
+// open panel window
+function openModalWindow() {
+    if(panelIsClosed) {
+        panel = jsPanel.create(panelOptions);
+        panelIsClosed = false;
+    } else {
+        console.log("panel is already opened !");
+    }
+}
+
+let navNewsElement = document.getElementById("nav-news");
+navNewsElement.addEventListener("click", openModalWindow);
