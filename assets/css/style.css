@@ -403,7 +403,10 @@ footer .copyright-link {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
-
+	.jsPanel {
+		width: 80% !important;
+		height: 80% !important;
+	}
 }
 
 
@@ -411,7 +414,10 @@ footer .copyright-link {
 
 @media only screen and (min-width: 768px) {
 	/* For desktop: */
-
+	.jsPanel {
+		width: 80% !important;
+		height: 80% !important;
+	}
 }
 
 
