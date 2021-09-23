@@ -192,17 +192,6 @@ a:hover {
 	transition: visibility 0s 1s, opacity 0s linear;  
 }
 
-/* hr {
-	width: 50%;
-	margin: 0 auto;
-	margin-top: 1rem;
-	/* border-bottom: dashed 0.1em; */
-	/* background-image: linear-gradient(to right, black 20%, rgba(255,255,255,0) 0%); */
-	/* background-position: bottom; */
-	/* background-size: 10px 1px; */
-	/* background-repeat: repeat-x; */
-} */
-
 /* Navigation Footer */
 .nav-footer {
 	margin-bottom: 3rem;
@@ -378,7 +367,14 @@ footer .copyright-link {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
-	
+	.navigation {
+		margin-left: 1rem;
+	}
+
+	.jsPanel {
+		width: 80% !important;
+		height: 80% !important;
+	}
 }
 
 
