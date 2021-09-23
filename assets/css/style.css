@@ -237,6 +237,12 @@ main {
 	display: none;
 }
 
+.news-container {
+	margin-bottom: 4rem;
+    padding-bottom: 1rem;
+	border-bottom: 1px solid rgba(0,0,0, 0.5);
+}
+
 .news-title {
 	font-size: 18px;
     font-weight: normal;
