@@ -394,6 +394,8 @@ footer .copyright-link {
 @media only screen and (max-width: 600px) {
 	.navigation {
 		margin-left: 1rem;
+		width: min-content;
+		z-index: 4;
 	}
 
 	.nav-links {
